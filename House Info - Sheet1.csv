@@ -1,0 +1,10 @@
+House Coordinates,House #,Time to Mow (hours),Blade Type,Mounting Time (hours),Grass Type
+"42.07295° N, 87.94381° W",1,0.5,A,0.25,Kentucky Bluegrass
+"42.09601° N, 88.00249° W",2,0.5,B,0.5,Perennial ryegrass
+"42.05852° N, 87.98977° W",3,0.333,A,0.25,Kentucky Bluegrass
+"42.10417° N, 87.94994° W",4,0.75,C,0.75,Tall Fescue
+"42.07595° N, 87.95840° W",5,0.333,B,0.5,Perennial ryegrass
+"42.07385° N, 87.93839° W",6,0.333,A,0.25,Kentucky Bluegrass
+"42.06037° N, 87.97831° W",7,0.5,C,0.75,Tall Fescue
+"42.07100° N, 87.94568° W",8,0.333,B,0.5,Perennial ryegrass
+"42.11188° N, 87.95335° W",9,0.75,B,0.5,Perennial ryegrass
