@@ -1,0 +1,44 @@
+---
+title: "ISE 3230 Project"
+output:
+  pdf_document: default
+  html_document: default
+date: "2024-11-26"
+---
+
+#### Objective Function
+
+##### Travel Cost
+
+$$Travel \hspace{0.2cm} Cost = i \sum j \sum (0.81 \cdot d_{ij} \cdot x_{ij})$$
+
+##### Mowing Cost
+
+$$Mowing \hspace{0.2cm} Cost = i \sum {t_i} j \sum (x_{ij} \cdot 40)$$
+##### Blade Change Cost
+
+$$Blade \hspace{0.1cm} Change \hspace{0.1cm} Cost = i \sum j \sum (x_{ij} \cdot blade\_change\_cost_{k} \cdot (blade\_type_{i} \neq blade\_type_{j}))$$
+
+#### Constraints
+
+##### Each house has exactly one outgoing route:
+
+$$\sum_{j=0}^n x_{ij} = 1 \hspace{0.3cm} \forall i$$
+
+##### Each house has exactly one incoming route:
+
+$$\sum_{i=0}^n x_{ij} = 1 \hspace{0.3cm} \forall j$$
+
+##### No self-loops:
+
+$$x_{ii} = 0 \hspace{0.3cm} \forall i$$
+
+##### Eliminate sub tours:
+
+$$y_i - y_j + n \cdot x_{ij} \leq n - 1 \hspace{0.3cm} \forall i,j \hspace{0.3cm} (i \neq j)$$
+
+##### Garage:
+
+$$\sum x _{0j} = 1 for \hspace{0.1cm} all \hspace{0.1cm} j -> Garage \hspace{0.1cm} is \hspace{0.1cm} starting \hspace{0.1cm} point$$
+
+$$\sum x _{i0} = 1 for \hspace{0.1cm} all \hspace{0.1cm} i -> Garage \hspace{0.1cm} is \hspace{0.1cm} ending \hspace{0.1cm} point$$
